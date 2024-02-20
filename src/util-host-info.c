@@ -91,7 +91,7 @@ int SCKernelVersionIsAtLeast(int major, int minor)
         err = true;
     }
 
-    pcre2_substring_list_free((PCRE2_SPTR *)list);
+    pcre2_substring_list_free(list);
     pcre2_match_data_free(version_regex_match);
     pcre2_code_free(version_regex);
 
